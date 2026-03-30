@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="riel.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cabeza.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="boto.css">
+</head>
+<body>
+    
+    <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+ <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Carúpano</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inició</a></li>
+      <li><a href="cronograma.html">Cronograma Semana Santa 2026</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turísticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interés  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y bebidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+    
+<div class="contenedor-imagen">
+  <img src="farmacia.jpeg" alt="Descripción de la imagen">
+</div>
+
+      <!-- El contenedor es clave para el scroll en celulares -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>N° de telefono</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+
+                       <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmatodo  </td>
+                    <td>Av. Universitaria Sector Miramontes a 100 metros del Hospital. </td>
+                    <td> 0414-0858185
+</td>
+                </tr>
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmacia Carmencita C.A.  </td>
+                    <td>Av.Universitaria Sector Bello Monte.</td>
+                    <td> 0424-8234384</td>
+                </tr>
+
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmacia San Judas Tadeo </td>
+                    <td>Urb. Guayacán de las Flores Frente al Liceo José Francisco Bermúdez. </td>
+                    <td>0412-3042793 </td>
+                </tr>
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>TodoFarma C.A  </td>
+                    <td>Calle Juncal cruce con Calle Guiria a 20 metros de la Mansión del Pan. </td>
+                    <td> 0294-3313047</td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmacia Santísima Trinidad </td>
+                    <td>Guayacán de las Flores Sector 1 calle #6 cruce con Calle #3. </td>
+                    <td>0414-7800194 </td>
+                </tr>
+
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmacia Virgen de Lourdes I C.A. </td>
+                    <td>Av.Universitaria al lado del galpón Reaoca. </td>
+                    <td>0424-8360928</td>
+                </tr>
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmacia Novo Pharma Express C.A. </td>
+                    <td>Calle San Rafael Playa Grande. </td>
+                    <td> 0412-1867218</td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farma Express C.A.  </td>
+                    <td>Calle Juncal #79 al lado de la Panadería La Marquesana. </td>
+                    <td> 0412-1991547</td>
+                </tr>
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmacia Multi descuento II C.A. </td>
+                    <td>Calle Juncal Local #126 Frente a Camarafot </td>
+                    <td> </td>
+                </tr>
+
+
+                  <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Farmacia Super Ahorro III C.A </td>
+                    <td>Calle Acosta Sector El Mercado frente a la casa del granjero. </td>
+                    <td> 0416-6863555</td>
+                </tr>
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>Todo Farma C.A  </td>
+                    <td>Calle Juncal cruce con Calle Guiria a 20 metros de la Mansión del Pan. </td>
+                    <td> 0412-0825232</td>
+                </tr>
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="36"
+                         height="36"
+                          fill="currentColor"
+                           class="bi bi-prescription2"
+                            viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
+                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
+                        </svg>
+                    </td>
+                    <td>SurtiFarmacia Principal C.A  </td>
+                    <td>Calle Juncal cruce con Calle Marino al lado del mercadito El Ángel  </td>
+                    <td> 0414-7801496</td>
+                </tr>
+
+  
+           
+            </tbody>
+        </table>
+    </div>
+
+
+    
+<br>
+<br>
+<footer class="footer-institucional">
+  <div class="fila-logos">
+  <img src="ll1.png" alt="Logo 2">
+    <img src="l6.png" alt="Logo 6">
+     <img src="l5.png" alt="Logo 5">
+        <img src="l3.PNG" alt="Logo 3">
+     <img src="l4.png" alt="Logo 4">
+     <img src="l7.png" alt="Logo 7">
+       <img src="l9.PNG" alt="Logo 9">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l8.png" alt="Logo 8">
+   
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bloque.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cabeza.css">
+
+</head>
+<body>
+
+  <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+ <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Carúpano</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inició</a></li>
+      <li><a href="cronograma.html">Cronograma Semana Santa 2026</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turísticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interés  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y bebidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+
+      <!-- img de cabeza -->
+<div class="contenedor-imagen">
+  <img src="plaza.jpeg" alt="Descripción de la imagen">
+</div>
+
+
+    
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="plaza ver.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Plaza Bermúdez </h3>
+            <p class="tarjeta-direccion">Centro  de Carúpano , entre la Calle Independencia y la Calle Carabobo.</p>
+            
+            <a href="https://www.google.com/maps/place/Plaza+Col%C3%B3n,+Car%C3%BApano+6150,+Sucre/@10.6653657,-63.2487604,17z/data=!3m1!4b1!4m6!3m5!1s0x8c33dd20f5694147:0x7bdbdb25fbb57e63!8m2!3d10.6653354!4d-63.2487896!16s%2Fg%2F11bw4d8lfz?entry=ttu&g_ep=EgoyMDI2MDIwOS4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="bolivar.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Plaza Simón Bolívar</h3>
+            <p class="tarjeta-direccion">ubicado entre  calle Juncal y calle Carabobo frente de la panadería  Bolivariana</p
+                >
+            
+            <a href="https://maps.app.goo.gl/pBGb2LxTLzKXnmEp9?g_st=aw" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="i santa rosa.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Plaza Santa Rosa</h3>
+            <p class="tarjeta-direccion">Centro  histórico de Carúpano, sector Santa Rosa</p>
+            
+            <a href="https://www.google.com/maps/place/Plaza+Santa+Rosa/@10.6698723,-63.2454491,17z/data=!3m1!4b1!4m6!3m5!1s0x8c33dd1f247f74cb:0x91277edbc5f6f706!8m2!3d10.6698723!4d-63.2454491!16s%2Fg%2F12hm1cv0p?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+<footer class="footer-institucional">
+  <div class="fila-logos">
+  <img src="ll1.png" alt="Logo 2">
+    <img src="l6.png" alt="Logo 6">
+     <img src="l5.png" alt="Logo 5">
+        <img src="l3.PNG" alt="Logo 3">
+     <img src="l4.png" alt="Logo 4">
+     <img src="l7.png" alt="Logo 7">
+       <img src="l9.PNG" alt="Logo 9">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l8.png" alt="Logo 8">
+   
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

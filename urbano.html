@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="riel.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cabeza.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="boto.css">
+    <link rel="stylesheet" href="riel.css">
+</head>
+<body>
+    
+    <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+ <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Carúpano</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inició</a></li>
+      <li><a href="cronograma.html">Cronograma Semana Santa 2026</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turísticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interés  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y bebidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+    
+  <!-- riel de img (opcional) -->
+    <div class="slider-container">
+        <div class="slider-track">
+            <img src="terminal.jpeg" alt="Paisaje 1">
+            <img src="termi.jpeg" alt="Paisaje 2">
+            <img src="tras.jpeg" alt="Paisaje 3">
+             <img src="ferri.jpeg" alt="Paisaje 3">
+              <img src="ferri2.jpeg" alt="Paisaje 3">
+               <img src="aeropuerto.jpeg" alt="Paisaje 3">
+           
+        </div>
+    </div>
+
+      <!-- El contenedor es clave para el scroll en celulares -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>LÍNEAS DE TRANSPORTE</th>
+                    <th>UBICACIÓN POR PARADAS</th>
+                    <th>RUTA</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+
+                       <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>U. C. San José Obrero  </td>
+                    <td>C/El Mercadito con C/Acosta y
+C/Colombia con C/Güiria </td>
+                    <td> Lebranche - Guaca - Mercado -
+Centro (y viceversa)
+</td>
+                </tr>
+
+
+                                 <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>sociación Cooperativa Hermanos
+Rojas Güiria de la Playa, R. L.  </td>
+                    <td>C/El Mercadito con C/Acosta y
+C/Colombia con C/Güiria </td>
+                    <td> Playa Patilla - Güiria de la Playa -
+Centro - Mercado (y viceversa)
+</td>
+                </tr>
+                
+                             <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Civil San Rafael Arcánge  </td>
+                    <td>C/El Mercadito con C/Acosta y
+C/Libertad entre C/Güiria y C/
+San Féli </td>
+                    <td> Playa Grande Arriba - Mercado -
+Centro (y viceversa)
+</td>
+                </tr>
+                
+                
+                            <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Cooperativa de Transporte
+Karupana, R. L. </td>
+                    <td>C/El Mercadito con C/Acosta y
+C/Libertad con C/San Félix </td>
+                    <td> Centro - Playa Grande - Londres (y
+viceversa
+</td>
+                </tr>         
+
+                          <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Civil Social Laguna
+Mar, A. C. </td>
+                    <td>C/El Mercadito y C/Colombia
+con C/Güiria </td>
+                    <td>Playa Patilla - Pica de Evaristo I -
+Güiria - Centro - Mercado (y
+viceversa)
+</td>
+                </tr>
+  
+
+                             <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Cooperativa Carros
+por Puesto Hato Romar   </td>
+                    <td>C/El Mercadito  </td>
+                    <td> Hato Romar - Parquecito -
+Mercado - Centro (y viceversa)
+</td>
+                </tr>
+                
+                
+                             <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Civil Conductores de Transporte
+Bloques de Playa Grande  </td>
+                    <td>C/Colombia con C/San Félix  </td>
+                    <td> Urb. Augusto Malavé Villaba -
+Centro - Mercado (y viceversa)
+</td>
+                </tr>
+                
+                
+
+                              <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>U. C. San Martín </td>
+                    <td>C/Chimborazo con C/Victoria y
+C/Güiria con C/Carabobo </td>
+                    <td> San Martín - Av. Circunvalación Sur
+- Centro - Mercado (y viceversa)
+</td>
+                </tr> 
+                
+                
+                            <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Cooperativa Conductores
+22 de agosto, R. L. </td>
+                    <td>C/Las Margaritas con
+C/Chimborazo y
+C/Independencia con
+C/Cantaura </td>
+                    <td> 22 de Agosto - Curacho - Centro -
+Mercado - Av. Circunvalación Sur (y
+viceversa)
+</td>
+                </tr>
+                
+                
+                            <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Civil U. C. El Valle  </td>
+                    <td>C/Victoria con C/Panamá y
+C/San Félix con C/Carabobo </td>
+                    <td> El Valle - Centro (y viceversa)
+</td>
+                </tr>
+                
+                
+
+                          <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Cooperativa Transporte Rural
+Chipichipe, R. L </td>
+                    <td>3 C/El Mercadito con C/Acosta </td>
+                    <td> Maturincito - Chipichipe - Mercado
+- Centro (y viceversa)
+                </tr>
+                
+                
+
+
+                             <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>sociación Civil de Conductores 8
+de Julio  </td>
+                    <td>C/Chimborazo con C/Margarita
+y C/Juncal con C/Cantaura</td>
+                    <td> Las Viviendas de Macarapana -
+8 de Julio - Av. Ché Guevara -
+Centro - Mercado (y viceversa)
+</td>
+                </tr>
+                
+                
+
+     
+                                     <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Unión de Conductores de Macarapana, S.
+C.   </td>
+                    <td>C/Chimborazo con C/Las
+Margaritas y C/Juncal con
+C/Cantaura </td>
+                    <td> Las Viviendas de Macarapana -
+Camino de Macarapana - Centro -
+Mercado (y viceversa)
+</td>
+                </tr>
+
+                             <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td> Unión de Conductores 5
+de Julio  </td>
+                    <td>C/El Mercadito con C/Acosta y
+C/Las Margaritas con C/Libertad </td>
+                    <td> Club de Leones - Troncal 10 -
+Mercado - Centro (y viceversa)
+</td>
+                </tr>
+                
+        
+                                     <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>2 Unión Conductores Nuestra
+Señora del Carmen </td>
+                    <td>C/Chimborazo con C/Acosta y
+C/San Félix con C/Junca </td>
+                    <td> La Vega - La Planta - Inces - Centro -
+Mercado (y viceversa)
+</td>
+                </tr>
+
+
+                              <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Civil Conductores Guaya-
+Lirio  </td>
+                    <td>C/Chimborazo con C/Monagas y
+C/Libertad con C/Las Margaritas
+</td>
+<td>
+    
+l Lirio - Los Cocos - Ambulatorio
+Pachico Aguilera - UDO - Av.
+Universitaria - Centro - Mercado (y
+viceversa)
+</td>
+                </tr>
+                
+                
+                            <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Unión de Conductores Guayacán
+de las Flores  </td>
+                    <td>C/Chimborazo con C/Victoria y
+C/Libertad entre C/San Félix y
+C/Las Margaritas </td>
+                    <td> Guayacán de las Flores - Av.
+Universitaria - Centro - Mercado (y
+viceversa)
+</td>
+                </tr>
+                
+                
+
+                             <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Civil U. C. Propietarios
+Guaya - Muco </td>
+                    <td>C/Panamá con C/Victoria y
+C/Las Margaritas con C/Juncal </td>
+                    <td>El Muco - Manuel Salvador Salinas -
+Av. Universitaria - Centro -
+Mercado (y viceversa)
+</td>
+                </tr>
+                
+                
+                            <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>sociación Cooperativa U. C. La
+Ceiba, R. L.   </td>
+                    <td>C/Las Margaritas con C/Junca </td>
+                    <td> Maisanta - Nuestra Señora del
+Carmen - La Vega - La Ceiba de
+Canchunchú - Av. Universitaria -
+Mercado - Centro (y viceversa)
+</td>
+                </tr>
+                
+                
+                                     <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>U. C. 24 de Julio Charallave  </td>
+                    <td>C/Chimborazo con C/Acosta y
+C/San Félix con C/Juncal </td>
+                    <td> EL Lazo - Charallave - Av.
+Universitaria - Mercado - Centro (y
+viceversa)
+</td>
+                </tr>
+
+                              <tr>
+                    <td>
+                 <svg xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                   height="36"
+                    fill="currentColor"
+                     class="bi bi-truck-front"
+                      viewBox="0 0 16 16">
+  <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5s2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1zm0 1h8v3.9q0 .002 0 0l-.002.004-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003l-.005-.002L4 6.9q0 .002 0 0z"/>
+  <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2zM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1z"/>
+</svg>
+                    </td>
+                    <td>Asociación Cooperativa Transporte
+El Charcal   </td>
+                    <td>C/El Mercadito con C/Acosta y
+C/Carabobo a la altura del mini
+terminal </td>
+                    <td> El Charcal - Charallave - Av.
+Universitaria - Mercado - Centro
+(y viceversa)
+</td>
+                </tr>
+          
+                
+         
+                  
+           
+            </tbody>
+        </table>
+    </div>
+
+
+    
+<br>
+<br>
+<footer class="footer-institucional">
+  <div class="fila-logos">
+  <img src="ll1.png" alt="Logo 2">
+    <img src="l6.png" alt="Logo 6">
+     <img src="l5.png" alt="Logo 5">
+        <img src="l3.PNG" alt="Logo 3">
+     <img src="l4.png" alt="Logo 4">
+     <img src="l7.png" alt="Logo 7">
+       <img src="l9.PNG" alt="Logo 9">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l8.png" alt="Logo 8">
+   
+  </div>
+</footer>
+
+
+</body>
+</html>

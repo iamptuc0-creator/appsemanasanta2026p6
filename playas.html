@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bloque.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cabeza.css">
+
+</head>
+<body>
+
+  <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+ <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Carúpano</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inició</a></li>
+      <li><a href="cronograma.html">Cronograma Semana Santa 2026</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turísticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interés  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y bebidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+
+    
+      <!-- img de cabeza -->
+<div class="contenedor-imagen">
+  <img src="pati.jpeg" alt =" Descripción de la imagen">
+</div>
+
+
+
+  <!-- modulo 7 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="pati.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa Patilla </h3>
+            <p class="tarjeta-direccion">Sector Playa Patilla </p>
+            
+            <a href="https://www.google.com/maps/place/Playa+Patilla+6150,+Sucre/@10.6821531,-63.3644306,17z/data=!3m1!4b1!4m6!3m5!1s0x8c33daebbc90353f:0xdc4a28dd27e35948!8m2!3d10.6831655!4d-63.3619839!16s%2Fg%2F1tgz1ms1?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+  <!-- modulo 8 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="copey.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa Copey</h3>
+            <p class="tarjeta-direccion">Sector Playa Copey, Carretera Nacional Carúpano-Cumaná.</p>
+            
+            <a href="https://www.google.com/maps/place/Playa+Copey/data=!4m2!3m1!1s0x8c33db5dac609a6d:0x867db6fa90be6fbb?sa=X&ved=1t:242&ictx=111s" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+
+  <!-- modulo 10 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="uvita.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa Uvero II</h3>
+            <p class="tarjeta-direccion">Sector Los Uveros</p>
+            
+            <a href="https://www.google.com/maps/place/Playa+Los+Uveros+II,+Playa+Patilla,+6150,+Sucre/data=!4m2!3m1!1s0x8c33dadd226bc469:0xbe9042c85e727811?sa=X&ved=1t:242&ictx=111" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+
+
+  <!-- modulo 1 -->
+
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="herna baxques.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa Hernán Vásquez </h3>
+            <p class="tarjeta-direccion">Al lado de playa Boca de Río.</p>
+            
+            <a href="https://www.google.com/maps/place/Playa+Hernan+Vazquez/@10.6832494,-63.2415909,14z/data=!4m14!1m7!3m6!1s0x8c33dd0ae070e41f:0x97deaa551d547efe!2sPlaya+Hernan+Vazquez!8m2!3d10.6841985!4d-63.2282871!16s%2Fg%2F11c1qbh3f9!3m5!1s0x8c33dd0ae070e41f:0x97deaa551d547efe!8m2!3d10.6841985!4d-63.2282871!16s%2Fg%2F11c1qbh3f9?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+  <!-- modulo 2 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="mansanilo.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa Manzanillo</h3>
+            <p class="tarjeta-direccion">Al lado del Círculo Militar Manzanillo.</p>
+            
+            <a href="https://www.google.com/maps/place/Playa+Complejo+Turistico+Manzanillo/@10.6610139,-63.443928,14z/data=!4m10!1m2!2m1!1splaya+en+manzanillo+carupano!3m6!1s0x8c33cfdf1a976ee3:0x780975083938dab9!8m2!3d10.6610147!4d-63.4192167!15sChxwbGF5YSBlbiBtYW56YW5pbGxvIGNhcnVwYW5vkgEFYmVhY2jgAQA!16s%2Fg%2F11c1qblqrx?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+
+
+  <!-- modulo 4 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="perto martibez.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa Puerto Martínez</h3>
+            <p class="tarjeta-direccion">Sector Puerto Martínez </p>
+            
+            <a href="https://www.google.com/maps/place/Puerto+Mart%C3%ADnez+6150,+Sucre/@10.679022,-63.3615875,17z/data=!3m1!4b1!4m6!3m5!1s0x8c33dae9efe7216f:0x902bcf534ea5ceda!8m2!3d10.6788184!4d-63.3601414!16s%2Fg%2F1tlbq5s0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+  <!-- modulo 11 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="tio pedro.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa tio pedro</h3>
+            <p class="tarjeta-direccion">Av. Perimetral Rómulo Gallegos Sector Tío Pedro.</p>
+            
+            <a href="https://www.google.com/maps/place/Playa+T%C3%ADo+Pedro/@10.6747015,-63.2388039,17z/data=!3m1!4b1!4m6!3m5!1s0x8c33dd1041f8acef:0x13eace1276914c1f!8m2!3d10.6745738!4d-63.2387133!16s%2Fg%2F12hmhwptg?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+  <!-- modulo 12 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="copacabana.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa Copacabana  </h3>
+            <p class="tarjeta-direccion">Sector Copacabana </p>
+            
+            <a href="https://www.google.com/maps/place/Playa+Copacabana/@10.6739346,-63.3137369,15z/data=!3m1!4b1!4m6!3m5!1s0x8c33db69e001f94d:0x4eae80ba3bb7be3e!8m2!3d10.6739348!4d-63.3137369!16s%2Fg%2F11c1qbv568?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+  <!-- modulo 13 -->
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="play ned.jpeg" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Playa  playa grande</h3>
+            <p class="tarjeta-direccion">Sector playa grande </p>
+            
+            <a href="https://share.google/NqdG5SvBEpetUmUeM" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+
+
+<footer class="footer-institucional">
+  <div class="fila-logos">
+  <img src="ll1.png" alt="Logo 2">
+    <img src="l6.png" alt="Logo 6">
+     <img src="l5.png" alt="Logo 5">
+        <img src="l3.PNG" alt="Logo 3">
+     <img src="l4.png" alt="Logo 4">
+     <img src="l7.png" alt="Logo 7">
+       <img src="l9.PNG" alt="Logo 9">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l8.png" alt="Logo 8">
+   
+  </div>
+</footer>
+
+
+
+</body>
+</html>

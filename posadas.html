@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="riel.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cabeza.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="boto.css">
+</head>
+<body>
+    
+    <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+ <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Carúpano</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inició</a></li>
+      <li><a href="cronograma.html">Cronograma Semana Santa 2026</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turísticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interés  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y bebidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+    
+<div class="contenedor-imagen">
+  <img src="posa.jpeg" alt="Descripción de la imagen">
+</div>
+
+      <!-- El contenedor es clave para el scroll en celulares -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Direción</th>
+                    <th>N° de telefono</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+           <tr>
+                    <td>
+                   <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                     height="25"
+                      fill="currentColor"
+                       class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                    </svg>
+                    </td>
+                    <td>      Posada Turística Mareca Cabaña Amobladas C.A</td>
+                    <td>Urb. Copey Av. la Restinga.</td>
+                     <td>0424-8370551 </td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/sLfTqSX7omWGrD6G6?g_st=aw" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+               <tr>
+                    <td>
+                   <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                     height="25"
+                      fill="currentColor"
+                       class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                    </svg>
+                    </td>
+                    <td>    Posada Turística las Palmeras C.A</td>
+                    <td>Carretera Nacional Carúpano-Cumaná sector Pozo Colorado </td>
+                     <td>04121854288 </td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/EDUsXFxWnXGZcLQj6?g_st=aw" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+                
+               <tr>
+                    <td>
+                   <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                     height="25"
+                      fill="currentColor"
+                       class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                    </svg>
+                    </td>
+                    <td>             Posada Beba C.A.</td>
+                    <td>Carretera Nacional Carúpano-Cumaná sector Pozo Colorado </td>
+                     <td>0412-1191190 </td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/RhcDUsYxNPjiHKj9A?g_st=aw" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+               <tr>
+                    <td>
+                   <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                     height="25"
+                      fill="currentColor"
+                       class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                    </svg>
+                    </td>
+                    <td>        Posada Divino Niño C.A.</td>
+                    <td>Calle Calvario a 100 metros de la Iglesia Santa Catalina.</td>
+                     <td>0294-3320823 </td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/bA1kLsE9gp5c1Qr7A?g_st=aw" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+               <tr>
+                    <td>
+                   <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                     height="25"
+                      fill="currentColor"
+                       class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                    </svg>
+                    </td>
+                    <td>         Posada Playa Colorada C.A</td>
+                    <td>     Posada Playa Colorada C.A</td>
+                     <td>0414-8808946</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/51gRiDr4sJbPnPeCA?g_st=aw" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+               <tr>
+                    <td>
+                   <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                     height="25"
+                      fill="currentColor"
+                       class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                    </svg>
+                    </td>
+                    <td>          Posada Don Carlos C.A</td>
+                    <td>Carretera Nacional Carúpano-Cumaná a 200 metros del cementerio parque playa grande.</td>
+                     <td>0412-1435273 </td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/A5skX6Ya794U7JHe8?g_st=aw" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+                   <tr>
+                    <td>
+                   <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                     height="25"
+                      fill="currentColor"
+                       class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                    </svg>
+                    </td>
+                    <td>         Posada Mamá Dominga</td>
+                    <td>Urb.Tío Pedro Sector Medalla de Oro.</td>
+                     <td>0414-8031556 </td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/d2FMbFTjiQA96EHU7?g_st=aw" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+             
+
+
+
+          
+
+
+         
+
+
+           
+
+            
+
+
+            </tbody>
+        </table>
+    </div>
+<br>
+<br>
+<footer class="footer-institucional">
+  <div class="fila-logos">
+  <img src="ll1.png" alt="Logo 2">
+    <img src="l6.png" alt="Logo 6">
+     <img src="l5.png" alt="Logo 5">
+        <img src="l3.PNG" alt="Logo 3">
+     <img src="l4.png" alt="Logo 4">
+     <img src="l7.png" alt="Logo 7">
+       <img src="l9.PNG" alt="Logo 9">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l8.png" alt="Logo 8">
+   
+  </div>
+</footer>
+
+
+</body>
+</html>

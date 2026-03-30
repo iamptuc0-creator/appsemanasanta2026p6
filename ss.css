@@ -1,0 +1,95 @@
+/* Estilos aplicados ÚNICAMENTE a la tabla y sus hijos */
+.contenedor-tabla {
+    width: 95%;
+    max-width: 700px;
+    margin: 20px auto; /* Centrado respecto a su contenedor, no al body */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+}
+
+/* Cabecera interna */
+.contenedor-tabla .tabla-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: #f8fafc;
+    font-weight: bold;
+    color: #64748b;
+    border-bottom: 2px solid #e2e8f0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Filas (details) */
+.contenedor-tabla .fila-acordeon {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.contenedor-tabla .fila-acordeon:last-child {
+    border-bottom: none;
+}
+
+/* Elemento Clickable (summary) */
+.contenedor-tabla .fila-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    cursor: pointer;
+    list-style: none;
+    transition: background 0.2s;
+    font-weight: 500;
+}
+
+/* Quitar flecha nativa en navegadores */
+.contenedor-tabla .fila-principal::-webkit-details-marker {
+    display: none;
+}
+
+.contenedor-tabla .fila-principal:hover {
+    background-color: #f1f5f9;
+}
+
+/* Icono Personalizado (+) */
+.contenedor-tabla .icono::before {
+    content: '+';
+    font-size: 1.2rem;
+    color: #3b82f6;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+/* Estado Abierto */
+.contenedor-tabla details[open] .icono::before {
+    content: '-';
+    color: #ef4444;
+}
+
+/* Contenido desplegado */
+.contenedor-tabla .contenido-desplegable {
+    background-color: #f8fafc;
+    padding: 15px 40px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Filas de datos internos */
+.contenedor-tabla .dato-hijo {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #475569;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.contenedor-tabla .dato-hijo:last-child {
+    border-bottom: none;
+}
+
+.contenedor-tabla .dato-hijo strong {
+    color: #1e293b;
+}

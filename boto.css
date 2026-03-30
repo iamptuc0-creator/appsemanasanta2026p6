@@ -1,0 +1,30 @@
+.btn-gps {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background-color: #5d1ca3; /* Azul GPS */
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Estilo para el logo SVG */
+.logo-gps {
+  width: 24px;
+  height: 24px;
+}
+
+/* Efectos de interacción */
+.btn-gps:hover {
+  background-color: #1976D2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-gps:active {
+  transform: scale(0.98);
+}

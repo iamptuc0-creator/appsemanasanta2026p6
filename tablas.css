@@ -1,0 +1,38 @@
+/* Contenedor que permite el scroll lateral en pantallas pequeñas */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Activa el desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Suavidad en iPhone/iOS */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    min-width: 500px; /* Obliga a la tabla a no encogerse demasiado */
+    border-collapse: collapse;
+    background: white;
+}
+
+
+
+th, td {
+ text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
+
+th {
+   
+    background-color: #5d1ca3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Efecto de filas alternas */
+tr:nth-child(even) { background-color: #f8f9fa; }
+
+/* Resaltar fila al pasar el mouse (Desktop) */
+tr:hover { background-color: #f1f1f1; }

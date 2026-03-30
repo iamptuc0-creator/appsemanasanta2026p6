@@ -1,0 +1,18 @@
+.fila-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fila-logos img {
+  /* 33.33% menos el ajuste por los 2 gaps de 20px */
+  flex: 0 0 calc(33.33% - (20px * 2 / 3)); 
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-institucional{
+   background-image: linear-gradient( to right, #4B0082, #8A2BE2, #E6E6FA);
+}

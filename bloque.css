@@ -1,0 +1,72 @@
+.pantalla-completa {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 100%;
+    min-height: 80vh;      /* Cambia height por min-height para dar espacio si los elementos saltan de línea */
+
+    
+    /* SOLUCIÓN AL SOLAPAMIENTO */
+    flex-wrap: wrap;        /* Permite que los elementos bajen a la siguiente fila si no caben */
+    gap: 20px;              /* Crea una separación fija entre los elementos */
+    padding: 20px;          /* Evita que toquen los bordes de la pantalla */
+}
+
+/* Estilo de la Tarjeta */
+.tarjeta-ubicacion {
+    width: 320px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(120, 7, 165, 0.15);
+    overflow: hidden;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    text-align: center;
+}
+
+.tarjeta-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-cuerpo {
+    padding: 24px;
+}
+
+.tarjeta-nombre {
+    margin: 0 0 8px 0;
+    font-size: 1.3rem;
+    color: #111827;
+}
+
+.tarjeta-direccion {
+    margin: 0 0 24px 0;
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+/* Botón Estilizado */
+.boton-visitar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #000000; /* Color elegante */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 50px; /* Bordes redondeados tipo píldora */
+    font-weight: 600;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.boton-visitar:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.icono-gps {
+    width: 20px;
+    height: 20px;
+}

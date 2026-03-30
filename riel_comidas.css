@@ -1,0 +1,29 @@
+/* El riel ahora mide 10 veces el contenedor */
+.slider-track {
+    display: flex;
+    width: 1000%; 
+    animation: scroll 40s infinite ease-in-out; /* Más tiempo para 10 imágenes */
+    will-change: transform;
+}
+
+/* Cada imagen ocupa el 10% del riel total */
+.slider-track img {
+    width: 10%; 
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Animación: cada imagen se desplaza un 10% */
+@keyframes scroll {
+    0%, 8%   { transform: translateX(0); }
+    10%, 18% { transform: translateX(-10%); }
+    20%, 28% { transform: translateX(-20%); }
+    30%, 38% { transform: translateX(-30%); }
+    40%, 48% { transform: translateX(-40%); }
+    50%, 58% { transform: translateX(-50%); }
+    60%, 68% { transform: translateX(-60%); }
+    70%, 78% { transform: translateX(-70%); }
+    80%, 88% { transform: translateX(-80%); }
+    90%, 98% { transform: translateX(-90%); }
+    100%     { transform: translateX(0); } /* Regreso al inicio */
+}

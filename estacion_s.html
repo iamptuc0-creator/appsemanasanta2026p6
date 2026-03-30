@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="riel.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cabeza.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="boto.css">
+</head>
+<body>
+    
+    <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+ <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Carúpano</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inició</a></li>
+      <li><a href="cronograma.html">Cronograma Semana Santa 2026</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turísticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interés  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y bebidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+    
+<div class="contenedor-imagen">
+  <img src="estacon.jpg" alt="Descripción de la imagen">
+</div>
+
+      <!-- El contenedor es clave para el scroll en celulares -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>nombre </th>
+                    <th>Direción</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                         width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Servi Centro La Gran Parada </td>
+                    <td>Calle Monagas </td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://www.google.com/maps/place/E%2FS+PDV+La+Gran+Parada/@10.6657507,-63.257343,17z/data=!3m1!4b1!4m6!3m5!1s0x8c33dcdc312d08a9:0x94e1c4cbea74a389!8m2!3d10.6657507!4d-63.257343!16s%2Fg%2F11bv1mtx49?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                      <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Estación de Servicios San José C.A. </td>
+                    <td>Sector Club de Leones Carretera Nacional Carúpano-Cumaná </td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="TU_URL_AQUÍ" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                               width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Inversiones Realza C.A </td>
+                    <td>Calle Libertad con Calle Monagas frente a la oficina Zoom.</td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="TU_URL_AQUÍ" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                          <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Estación de servicios Bello Monte C.A. </td>
+                    <td>Av.iniversitaria Sector Bello Monte.</td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/R2564hczwuL8WMCG6" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                      width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+                
+             <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Estación de Servicios El Mangle C.A. </td>
+                    <td>Av. Universitaria Sector El Mangle frente a la clínica Bello Monte.</td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/LsJuumLj15J5f3Yi9" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                     width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                        <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                              width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Retiz C.A </td>
+                    <td>Calle Juncal frente a multitel </td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/GTds7anK54hPg7pX6" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                       width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                              width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Servi centros Los Molinos C.A. </td>
+                    <td>Av.Universitaria Sector Los Molinos </td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://www.google.com/maps/place/E%2FS+Los+Mol%C3%ADnos,+C.A./@10.6405874,-63.257006,17z/data=!3m1!4b1!4m6!3m5!1s0x8c33c32ed75d9c45:0x3f3b15be67bf99b6!8m2!3d10.6405874!4d-63.257006!16s%2Fg%2F1tkkvx_v?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                          <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                               width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Estación de Servicios Las Ponías C.A </td>
+                    <td>Carretera Nacional Carúpano-Cumaná Las Ponías </td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/HDsN2mNMLpqQ11y67" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="25"
+                         height="25" 
+                                fill="currentColor" 
+                                class="bi bi-fuel-pump"
+                                viewBox="0 0 16 16">
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1q.846-.002 1.412.336c.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8z"/>
+                        </svg>
+                    </td>
+                    <td>Inversiones Playa Grande C.A </td>
+                    <td>Carretera Nacional Sector Playa Grande </td>
+                    <td>
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/SEFo4N8LFjbJVfj69" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+           
+
+            </tbody>
+        </table>
+    </div>
+<br>
+<br>
+<footer class="footer-institucional">
+  <div class="fila-logos">
+  <img src="ll1.png" alt="Logo 2">
+    <img src="l6.png" alt="Logo 6">
+     <img src="l5.png" alt="Logo 5">
+        <img src="l3.PNG" alt="Logo 3">
+     <img src="l4.png" alt="Logo 4">
+     <img src="l7.png" alt="Logo 7">
+       <img src="l9.PNG" alt="Logo 9">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l8.png" alt="Logo 8">
+   
+  </div>
+</footer>
+
+
+</body>
+</html>

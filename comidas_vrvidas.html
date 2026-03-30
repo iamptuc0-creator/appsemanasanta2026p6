@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="riel.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cabeza.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="boto.css">
+    <link rel="stylesheet" href="riel.css">
+</head>
+<body>
+    
+    <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+ <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Carúpano</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inició</a></li>
+      <li><a href="cronograma.html">Cronograma Semana Santa 2026</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turísticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interés  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y bebidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+    
+    <!-- Capa oscura de fondo al abrir (opcional) -->
+    <label for="btn-nav" class="overlay"></label>
+  <!-- riel de img (opcional) -->
+    <div class="slider-container">
+        <div class="slider-track">
+            <img src="co1.jpeg" alt="Paisaje 1">
+            <img src="co2.jpeg" alt="Paisaje 2">
+            <img src="pes.jpeg" alt="Paisaje 3">
+            <img src="ron.jpeg" alt="Paisaje 4">
+            <img src="ca.jpeg" alt="Paisaje 5">
+            <img src="co6.jpeg" alt="Paisaje 6">
+          
+        </div>
+    </div>
+
+      <!-- El contenedor es clave para el scroll en celulares -->
+
+   <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>N° de telefono</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                     
+                    </td>
+                     <td>Restaurante el Mayar</td>
+                    <td>Boca de rio, via nacional Rio caribe a 100 metros del punto de control </td>
+                     <td>0414-7903906</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/YWu4k9u4mYv9ad5EA" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panadería los molinos </td>
+                    <td>Av universitaria frente al parque los molinos </td>
+                     <td>0414-9963154</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/Cveod7xacpDzEh7o8" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Exquisiteces sugar c.a  </td>
+                    <td>centro comercial cristal  </td>
+                     <td>0416-6970941</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/skePfNgUvGvt5hiA7" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Charly c.a</td>
+                    <td>frente plaza bolivar </td>
+                     <td>0412-1155592</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/Co2Pv15YM6iYFam17" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Emprendimiento aleidy sushi bar</td>
+                    <td>a 50 metros de plaza bolivar </td>
+                     <td>0424-8859475</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/qRqeMvBdb1o46TmQ7" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                     <tr>
+                    <td>
+                     
+                    </td>
+                    <td>sabores gourmet c.a</td>
+                    <td>Av.Circunvalación Sur Sector los Molinos.</td>
+                     <td>0424-8381193</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/RxNVmnvqfi36ydQQA" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>panadería la mansión del pan  C.A</td>
+                    <td>centro de Carupano a 50 metros de la plaza descolonizada </td>
+                     <td>0412-1196418</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/GtZmBkMUv16GCMBA6" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>café bar restaurant spizzico c.a </td>
+                    <td>frente al banco exterior diagonal a el banco de Venezuela </td>
+                     <td>0412-1890003</td> 
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/xdbsRhQ9VBP9nSTg8" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+                     <tr>
+                    <td>
+                     
+                    </td>
+                    <td>inversiones mariluz Informal</td>
+                    <td>frente al ateneo de Carupano </td>
+                     <td>0426-2752608</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/yuF1Rbha2W1hvSPu6" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Hotel Los Molinos C.A.</td>
+                    <td>Av.Circunvalación Sur Sector los Molinos.</td>
+                     <td>0414-7781884</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/TX2KBFbaKn8mcFJLA?g_st=aw" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>cachapera dame otra C.A</td>
+                    <td>Av.Circunvalación Sur Sector los Molinos.playa grande a 100 metros del monumento san Rafael </td>
+                     <td>0412-1862116</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/CUamNRL5f2QDHBoG8" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>panadería karrussel c.a </td>
+                    <td>Av.Circunvalación Sur Sector los Molinos.</td>
+                     <td>0426-5945813</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/W1wYBa1hAYiMmrqu7" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Barbacoas expertos en parrillas C.A</td>
+                    <td>playa grande a 60 metros del monumento san Rafael </td>
+                     <td>0424-8007544</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/dKdudxsNtAHagVjSA" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panadería virgen del valle c.a</td>
+                    <td>playa grande, frente el monumento san Rafael </td>
+                     <td>0424-8746465</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/xhJWkAZh7WXStHbZA" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>La llovizna c.a</td>
+                    <td>calle libertad, frente a la policía municipal </td>
+                     <td>0414-8370800</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/dGT3P6W8ADZZhWvf7" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>supermercado Francys II C.A</td>
+                    <td>calle independencia a 20 metros del banco de Venezuela </td>
+                     <td>0294-3312089</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/gSHrJ2wW98VU28a59" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>El rincón criollo C.A</td>
+                    <td>calle cantaura crucé con carabobo</td>
+                     <td>0414-7990564</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/eg3aPwWQ9yCkG5DH7" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Max pollo express </td>
+                    <td>calle Acosta con Carabobo </td>
+                     <td>0416-6970941</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/NpAQhLkapgMER3un9" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panadería, Pastelería y Cafetería La Bolivariana C.A</td>
+                    <td>calle independencia, frente plaza Bolivar </td>
+                     <td>0412-1847344</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/8pVgReP3hHybPKct5" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panaderia la Espiga Dorada C.A</td>
+                    <td>calle independencia a 20 metros de la clínica San Pablo. </td>
+                     <td>0424-2956767</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/GQtoGFXiZAD3TV4d8" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+            
+                     <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Teque food (Personal)</td>
+                    <td>Calle guiria a 20 metros de la plaza descolonizada </td>
+                     <td>0412-1842673</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/yfeDjEYKbbruFMN96" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panadería y restaurant flor oriental c.a</td>
+                    <td>calle libertad a 100 metros de la estación de servicio </td>
+                     <td>0424-8183971</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/UCgAyA5XJHta872BA" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+ 
+         <tr>
+                    <td>
+                     
+                    </td>
+                    <td>La Popo II </td>
+                    <td>calle libertad a 100 metros de la estación de servicio libertad </td>
+                     <td>0416-4940467</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/4FqN73TqKqotkEocA" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                     
+                    </td>
+                    <td> Big pollo II</td>
+                    <td>calle Juncal cruce con calle urica </td>
+                     <td>0414-7801724</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/CNtxwnSTdyz15Rv57" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Restaurant El Rincón de Italia</td>
+                    <td>calle Juncal cruce con callé Monagas </td>
+                     <td>0412-2365596</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/kz98PWAshL1BNCHn7" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Exquisiteces Mi fé </td>
+                    <td>calle Acosta, en el c.c cristal </td>
+                     <td>0412-1132656</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/97FFoxmpwaUeuw9S9" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panadería el trébol C.A</td>
+                    <td>calle Juncal, cruce con Quebrada Honda.</td>
+                     <td>0414-9959069</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/ZyyfbuUGBxZXWFhg6" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panadería Pastelería la casa del pan C.A</td>
+                    <td>calle guiria a 20 metros del liceo Simón Rodríguez </td>
+                     <td>0424-8049058</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/cJVsbbKF9119UCM69" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                         <tr>
+                    <td>
+                     
+                    </td>
+                    <td>Panadería mi parada C.A</td>
+                    <td>calle guiria, frente al liceo Simón Rodríguez </td>
+                     <td>0412-8861544</td>
+                    <td>  
+                        <!-- Botón con logo de GPS -->
+                        <a href="https://maps.app.goo.gl/UH4DFVz47e89wTN48" target="_blank" class="btn-gps">
+                        <!-- Código SVG del logo de GPS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25"
+                         height="25" 
+                         fill="currentColor" 
+                         class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>  visitar</span>
+                        </a>
+                    </td>
+                </tr>
+
+                
+       
+              
+
+            </tbody>
+        </table>
+    </div>
+<br>
+<br>
+<footer class="footer-institucional">
+  <div class="fila-logos">
+  <img src="ll1.png" alt="Logo 2">
+    <img src="l6.png" alt="Logo 6">
+     <img src="l5.png" alt="Logo 5">
+        <img src="l3.PNG" alt="Logo 3">
+     <img src="l4.png" alt="Logo 4">
+     <img src="l7.png" alt="Logo 7">
+       <img src="l9.PNG" alt="Logo 9">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l8.png" alt="Logo 8">
+   
+  </div>
+</footer>
+
+
+</body>
+</html>
